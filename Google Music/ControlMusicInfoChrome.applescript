@@ -29,7 +29,7 @@ if isRunning then
 		tell foundTab
 			set |title| to execute javascript "document.getElementById('playerSongTitle').innerText"
 			set artist to execute javascript "document.querySelector('.player-artist-album-wrapper').innerText"
-			set art to "http:" & (execute javascript "document.getElementById('playingAlbumArt').getAttribute('src')")
+			set art to (execute javascript "document.getElementById('playingAlbumArt').getAttribute('src')")
 		end tell
 	end tell
 	
